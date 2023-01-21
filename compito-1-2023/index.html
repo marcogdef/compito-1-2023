@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esercizio 3</title>
+</head>
+<body>
+    <input id="input" type="number">
+    <button id="bottone">Prova ad indovinare</button>
+    <div id="output"></div>
+
+    <script>
+        let numbergen = Math.floor(Math.random() * 100);
+        let input = document.getElementById("input");
+        let output = document.getElementById("output");
+        document.getElementById("bottone").addEventListener("click", function() {
+        if (input === numbergen) {
+        alert("Hai indovinato")
+        } else if (input > numbergen) {
+        alert("troppo alto")
+        } else {
+        alert("troppo basso")
+    }
+});
+    </script>
+    
+</body>
+</html>
